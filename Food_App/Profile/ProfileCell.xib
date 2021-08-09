@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ProfileCell" id="iN0-l3-epB" customClass="ProfileCell" customModule="Food_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihT-bc-kFz">
+                    <rect key="frame" x="0.0" y="0.0" width="314" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile1" translatesAutoresizingMaskIntoConstraints="NO" id="Dgj-Of-czm">
+                            <rect key="frame" x="11.5" y="15" width="52.5" height="40"/>
+                            <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UX1-Dc-pkw">
+                            <rect key="frame" x="99" y="24" width="74" height="22"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgD-Lg-fmF">
+                            <rect key="frame" x="298" y="15" width="6" height="40"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="arrow">
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Dgj-Of-czm" firstAttribute="centerY" secondItem="ihT-bc-kFz" secondAttribute="centerY" id="3fN-4V-GZ8"/>
+                        <constraint firstItem="WgD-Lg-fmF" firstAttribute="bottom" secondItem="Dgj-Of-czm" secondAttribute="bottom" id="5Ef-fh-bDq"/>
+                        <constraint firstItem="UX1-Dc-pkw" firstAttribute="centerY" secondItem="Dgj-Of-czm" secondAttribute="centerY" id="Ads-ty-Rbo"/>
+                        <constraint firstItem="UX1-Dc-pkw" firstAttribute="leading" secondItem="Dgj-Of-czm" secondAttribute="trailing" constant="35" id="EQD-al-chs"/>
+                        <constraint firstItem="WgD-Lg-fmF" firstAttribute="top" secondItem="Dgj-Of-czm" secondAttribute="top" id="O6M-ZQ-V2k"/>
+                        <constraint firstItem="Dgj-Of-czm" firstAttribute="width" secondItem="ihT-bc-kFz" secondAttribute="width" multiplier="3:18" id="Q4a-W8-EzY"/>
+                        <constraint firstAttribute="trailing" secondItem="WgD-Lg-fmF" secondAttribute="trailing" constant="10" id="SCa-t8-0vZ"/>
+                        <constraint firstItem="Dgj-Of-czm" firstAttribute="centerX" secondItem="ihT-bc-kFz" secondAttribute="centerX" multiplier="0.24" id="cxN-Pu-EMn"/>
+                        <constraint firstItem="WgD-Lg-fmF" firstAttribute="centerY" secondItem="UX1-Dc-pkw" secondAttribute="centerY" id="rNR-VZ-I6J"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ihT-bc-kFz" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="1f2-4V-1ET"/>
+                <constraint firstItem="ihT-bc-kFz" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Qkl-8k-phw"/>
+                <constraint firstItem="Dgj-Of-czm" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.571429" id="RQQ-9l-dcP"/>
+                <constraint firstItem="ihT-bc-kFz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Yac-DV-pgh"/>
+                <constraint firstItem="ihT-bc-kFz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fdd-pN-J22"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="profileArwBtn" destination="WgD-Lg-fmF" id="xm6-91-ULx"/>
+                <outlet property="profileCellLbl" destination="UX1-Dc-pkw" id="43k-xX-anc"/>
+                <outlet property="profileImgVw" destination="Dgj-Of-czm" id="axL-54-glv"/>
+                <outlet property="profileVw" destination="ihT-bc-kFz" id="y4p-M5-Gfo"/>
+            </connections>
+            <point key="canvasLocation" x="166.66666666666669" y="-143.30357142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow" width="6" height="10"/>
+        <image name="profile1" width="14" height="14"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

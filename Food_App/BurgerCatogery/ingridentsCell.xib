@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="IngridentsCell" id="iN0-l3-epB" customClass="IngridentsCell" customModule="Food_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6F1-wc-fuv">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joint" translatesAutoresizingMaskIntoConstraints="NO" id="scM-KD-KGW">
+                            <rect key="frame" x="8" y="5" width="25" height="19.5"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gr5-ln-Lud">
+                            <rect key="frame" x="41" y="5" width="58.5" height="19.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02 Pcs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5we-l4-Wum">
+                            <rect key="frame" x="144.5" y="8" width="35" height="16.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="12"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="scM-KD-KGW" firstAttribute="top" secondItem="6F1-wc-fuv" secondAttribute="top" constant="5" id="GHz-1y-Vgs"/>
+                        <constraint firstItem="5we-l4-Wum" firstAttribute="bottom" secondItem="gr5-ln-Lud" secondAttribute="bottom" id="PJF-Qx-ULL"/>
+                        <constraint firstItem="5we-l4-Wum" firstAttribute="leading" secondItem="gr5-ln-Lud" secondAttribute="trailing" constant="45" id="XEG-ch-Oc8"/>
+                        <constraint firstItem="gr5-ln-Lud" firstAttribute="bottom" secondItem="scM-KD-KGW" secondAttribute="bottom" id="cIw-Tc-g9H"/>
+                        <constraint firstItem="scM-KD-KGW" firstAttribute="width" secondItem="6F1-wc-fuv" secondAttribute="width" multiplier="0.0603865" id="fop-Q1-zqw"/>
+                        <constraint firstItem="gr5-ln-Lud" firstAttribute="top" secondItem="scM-KD-KGW" secondAttribute="top" id="jm6-Nl-pln"/>
+                        <constraint firstItem="scM-KD-KGW" firstAttribute="leading" secondItem="6F1-wc-fuv" secondAttribute="leading" constant="8" id="rct-va-MdV"/>
+                        <constraint firstItem="5we-l4-Wum" firstAttribute="leading" secondItem="6F1-wc-fuv" secondAttribute="leading" constant="144.5" id="zbm-Fo-8Kn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="6F1-wc-fuv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="H1R-3d-j85"/>
+                <constraint firstAttribute="trailing" secondItem="6F1-wc-fuv" secondAttribute="trailing" id="aYl-GW-ZfW"/>
+                <constraint firstAttribute="bottom" secondItem="6F1-wc-fuv" secondAttribute="bottom" id="m9p-5k-jWH"/>
+                <constraint firstItem="6F1-wc-fuv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ug3-fz-hi0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="IngridentsLbl1" destination="gr5-ln-Lud" id="Pmm-9s-zoh"/>
+                <outlet property="IngridentsLbl2" destination="5we-l4-Wum" id="hVL-di-0lS"/>
+                <outlet property="ingridentsCellImgVw" destination="scM-KD-KGW" id="VnC-Iv-aL8"/>
+                <outlet property="ingrigentsCellVw" destination="6F1-wc-fuv" id="doW-bb-vvZ"/>
+            </connections>
+            <point key="canvasLocation" x="28.985507246376812" y="82.03125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="joint" width="9" height="9"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

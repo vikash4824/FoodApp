@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BurgerCatgr1" customModule="Food_App" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3g-0o-ygl">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3nU-2S-J8K">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATJ-h6-IEo">
+                                    <rect key="frame" x="9" y="8" width="396" height="131.5"/>
+                                    <string key="text">Pizza is a savory dish of Italian origin, consisting usualy round, flattened base of leavened wheat-based dough topped with tomatoes, cheese and often various other ingredients baked at a high temperature, traditionally in a wood-fired oven. A small pizza is sometimes called a pizzetta</string>
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xfo-2D-QKX">
+                                    <rect key="frame" x="0.0" y="154.5" width="414" height="687.5"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Xfo-2D-QKX" firstAttribute="top" secondItem="ATJ-h6-IEo" secondAttribute="bottom" constant="15" id="6iu-v0-85x"/>
+                                <constraint firstAttribute="bottom" secondItem="Xfo-2D-QKX" secondAttribute="bottom" constant="10" id="EtU-Oc-f2R"/>
+                                <constraint firstItem="Xfo-2D-QKX" firstAttribute="leading" secondItem="3nU-2S-J8K" secondAttribute="leading" id="Ph6-Dn-Guu"/>
+                                <constraint firstAttribute="trailing" secondItem="Xfo-2D-QKX" secondAttribute="trailing" id="hoa-kD-qa5"/>
+                                <constraint firstItem="ATJ-h6-IEo" firstAttribute="top" secondItem="3nU-2S-J8K" secondAttribute="top" constant="8" id="om2-DU-4WY"/>
+                                <constraint firstItem="ATJ-h6-IEo" firstAttribute="leading" secondItem="3nU-2S-J8K" secondAttribute="leading" constant="9" id="p5v-gK-laQ"/>
+                                <constraint firstAttribute="trailing" secondItem="ATJ-h6-IEo" secondAttribute="trailing" constant="9" id="sTu-KV-5f8"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="3nU-2S-J8K" firstAttribute="bottom" secondItem="lBu-Pm-QsE" secondAttribute="bottom" id="6gW-Ao-Di4"/>
+                        <constraint firstAttribute="trailing" secondItem="3nU-2S-J8K" secondAttribute="trailing" id="8aD-Wq-Pa6"/>
+                        <constraint firstAttribute="bottom" secondItem="3nU-2S-J8K" secondAttribute="bottom" id="EP8-a7-aGQ"/>
+                        <constraint firstItem="3nU-2S-J8K" firstAttribute="top" secondItem="k3g-0o-ygl" secondAttribute="top" id="TO3-Fv-dvJ"/>
+                        <constraint firstItem="3nU-2S-J8K" firstAttribute="width" secondItem="k3g-0o-ygl" secondAttribute="width" id="h8h-gJ-Ko8"/>
+                        <constraint firstItem="3nU-2S-J8K" firstAttribute="leading" secondItem="k3g-0o-ygl" secondAttribute="leading" id="kK4-7v-TJo"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="bhq-NL-rmZ"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="lBu-Pm-QsE"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="k3g-0o-ygl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="PR6-Yn-gc0"/>
+                <constraint firstAttribute="bottom" secondItem="k3g-0o-ygl" secondAttribute="bottom" id="S2f-Cs-ytO"/>
+                <constraint firstItem="k3g-0o-ygl" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dkC-U1-NKW"/>
+                <constraint firstItem="k3g-0o-ygl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="k1j-cp-Xhq"/>
+            </constraints>
+            <point key="canvasLocation" x="124.6376811594203" y="83.705357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

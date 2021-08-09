@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="PaymentMethodCell" id="iN0-l3-epB" customClass="PaymentMethodCell" customModule="Food_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tbY-k5-16Z">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paypal" translatesAutoresizingMaskIntoConstraints="NO" id="VcP-iG-3gz">
+                            <rect key="frame" x="9" y="7.5" width="65" height="65"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="RiL-Zb-LhB"/>
+                                <constraint firstAttribute="width" constant="65" id="vvb-K2-rAr"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paypal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9a-Fc-rLI">
+                            <rect key="frame" x="89" y="7.5" width="44.5" height="20.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay after recive delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUc-9P-kAF">
+                            <rect key="frame" x="89" y="43.5" width="174" height="22"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMl-Vr-r4r">
+                            <rect key="frame" x="376" y="28" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="cOc-yd-FNB"/>
+                                <constraint firstAttribute="width" constant="25" id="d14-pN-2Dy"/>
+                            </constraints>
+                            <state key="normal" image="Circle"/>
+                            <state key="selected" image="Selected"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="i9a-Fc-rLI" firstAttribute="leading" secondItem="VcP-iG-3gz" secondAttribute="trailing" constant="15" id="3GT-AE-xrD"/>
+                        <constraint firstItem="lMl-Vr-r4r" firstAttribute="trailing" secondItem="tbY-k5-16Z" secondAttribute="trailingMargin" constant="-5" id="BMH-U3-BRo"/>
+                        <constraint firstItem="i9a-Fc-rLI" firstAttribute="top" secondItem="VcP-iG-3gz" secondAttribute="top" id="E7q-Dk-fzc"/>
+                        <constraint firstItem="VcP-iG-3gz" firstAttribute="centerY" secondItem="tbY-k5-16Z" secondAttribute="centerY" id="IzQ-nr-OEB"/>
+                        <constraint firstItem="VcP-iG-3gz" firstAttribute="centerX" secondItem="tbY-k5-16Z" secondAttribute="centerX" multiplier="0.2" id="QWh-qr-edW"/>
+                        <constraint firstItem="vUc-9P-kAF" firstAttribute="top" secondItem="i9a-Fc-rLI" secondAttribute="bottom" constant="15.5" id="hJW-YS-Y06"/>
+                        <constraint firstItem="vUc-9P-kAF" firstAttribute="leading" secondItem="i9a-Fc-rLI" secondAttribute="leading" id="q2g-e5-Ijw"/>
+                        <constraint firstItem="lMl-Vr-r4r" firstAttribute="centerY" secondItem="VcP-iG-3gz" secondAttribute="centerY" id="yvE-Ho-KiG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tbY-k5-16Z" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Kxy-EI-345"/>
+                <constraint firstItem="tbY-k5-16Z" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="LEz-56-SLa"/>
+                <constraint firstItem="tbY-k5-16Z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZfQ-Jh-Nj7"/>
+                <constraint firstItem="tbY-k5-16Z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zQm-l7-GSP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="checkMarkBtn" destination="lMl-Vr-r4r" id="pBw-fp-0rv"/>
+                <outlet property="paymentDetailsLbl" destination="vUc-9P-kAF" id="58F-Sc-C3H"/>
+                <outlet property="paymentImgVw" destination="VcP-iG-3gz" id="tXi-sf-6YD"/>
+                <outlet property="paymentLbl" destination="i9a-Fc-rLI" id="nHM-o1-ugb"/>
+            </connections>
+            <point key="canvasLocation" x="37.681159420289859" y="22.767857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Circle" width="50" height="50"/>
+        <image name="Selected" width="18" height="18"/>
+        <image name="paypal" width="26" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

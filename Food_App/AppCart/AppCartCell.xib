@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="AppCartCell" id="iN0-l3-epB" customClass="AppCartCell" customModule="Food_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kYW-jf-c2z">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger2" translatesAutoresizingMaskIntoConstraints="NO" id="mBO-se-xSM">
+                            <rect key="frame" x="8" y="7.5" width="100" height="85"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="lBB-8y-vsm"/>
+                                <constraint firstAttribute="height" constant="85" id="uQM-9y-iQn"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mushroom Burgers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXb-8X-Xtp">
+                            <rect key="frame" x="118.5" y="7.5" width="142.5" height="22"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ES7-Lx-3Ib">
+                            <rect key="frame" x="118.5" y="50" width="16" height="25"/>
+                            <state key="normal" image="minus"/>
+                            <connections>
+                                <action selector="minusButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZZr-oY-qha"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pf5-Nk-31h">
+                            <rect key="frame" x="144.5" y="50" width="11" height="25"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHz-Aq-Mbq">
+                            <rect key="frame" x="165.5" y="50" width="16" height="25"/>
+                            <state key="normal" image="add"/>
+                            <connections>
+                                <action selector="plusButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Fre-EW-g2T"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$30.20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eR7-2Z-45A">
+                            <rect key="frame" x="343" y="50" width="59" height="25"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="eR7-2Z-45A" firstAttribute="top" secondItem="NHz-Aq-Mbq" secondAttribute="top" id="AgM-sP-B2Q"/>
+                        <constraint firstItem="Pf5-Nk-31h" firstAttribute="leading" secondItem="ES7-Lx-3Ib" secondAttribute="trailing" constant="10" id="Bpp-Pf-c3l"/>
+                        <constraint firstItem="NHz-Aq-Mbq" firstAttribute="leading" secondItem="Pf5-Nk-31h" secondAttribute="trailing" constant="10" id="H1D-XE-K6o"/>
+                        <constraint firstItem="mBO-se-xSM" firstAttribute="centerX" secondItem="kYW-jf-c2z" secondAttribute="centerX" multiplier="0.28" id="IVH-30-vdC"/>
+                        <constraint firstItem="Pf5-Nk-31h" firstAttribute="bottom" secondItem="ES7-Lx-3Ib" secondAttribute="bottom" id="IdY-Wk-Hp4"/>
+                        <constraint firstAttribute="height" constant="100" id="Nor-tI-WIA"/>
+                        <constraint firstItem="ES7-Lx-3Ib" firstAttribute="leading" secondItem="gXb-8X-Xtp" secondAttribute="leading" id="PxX-fP-rcb"/>
+                        <constraint firstItem="ES7-Lx-3Ib" firstAttribute="top" secondItem="gXb-8X-Xtp" secondAttribute="bottom" multiplier="1:1" constant="20.5" id="TF8-wJ-aNh"/>
+                        <constraint firstItem="Pf5-Nk-31h" firstAttribute="top" secondItem="ES7-Lx-3Ib" secondAttribute="top" id="Uji-33-mhL"/>
+                        <constraint firstAttribute="trailing" secondItem="eR7-2Z-45A" secondAttribute="trailing" constant="12" id="aFl-ku-2Fo"/>
+                        <constraint firstItem="eR7-2Z-45A" firstAttribute="bottom" secondItem="NHz-Aq-Mbq" secondAttribute="bottom" id="kGC-En-gQU"/>
+                        <constraint firstItem="NHz-Aq-Mbq" firstAttribute="top" secondItem="Pf5-Nk-31h" secondAttribute="top" id="nAf-a4-JYL"/>
+                        <constraint firstItem="gXb-8X-Xtp" firstAttribute="leading" secondItem="mBO-se-xSM" secondAttribute="trailing" constant="10.5" id="t2T-fK-2He"/>
+                        <constraint firstAttribute="width" constant="414" id="val-ua-EvO"/>
+                        <constraint firstItem="mBO-se-xSM" firstAttribute="centerY" secondItem="kYW-jf-c2z" secondAttribute="centerY" id="xER-a6-9dD"/>
+                        <constraint firstItem="NHz-Aq-Mbq" firstAttribute="bottom" secondItem="Pf5-Nk-31h" secondAttribute="bottom" id="yAt-eR-JG9"/>
+                        <constraint firstItem="gXb-8X-Xtp" firstAttribute="top" secondItem="mBO-se-xSM" secondAttribute="top" id="zZu-la-t99"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="kYW-jf-c2z" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="0U3-BO-lZV"/>
+                <constraint firstItem="kYW-jf-c2z" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="VvH-1D-kgo"/>
+                <constraint firstItem="kYW-jf-c2z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="paz-BU-StF"/>
+                <constraint firstItem="kYW-jf-c2z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="t18-o8-2wz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cartImgVw" destination="mBO-se-xSM" id="ULX-ia-YTg"/>
+                <outlet property="cartName" destination="gXb-8X-Xtp" id="6x1-tA-ZQd"/>
+                <outlet property="cartTotalLbl" destination="eR7-2Z-45A" id="lYY-Ih-iZw"/>
+                <outlet property="iteamNoLbl" destination="Pf5-Nk-31h" id="kY6-Wh-6ec"/>
+                <outlet property="minusBtn" destination="ES7-Lx-3Ib" id="4kS-Hd-HPU"/>
+                <outlet property="plusBtn" destination="NHz-Aq-Mbq" id="lCm-GN-xrB"/>
+            </connections>
+            <point key="canvasLocation" x="215.94202898550725" y="-165.40178571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add" width="16" height="16"/>
+        <image name="burger2" width="105" height="86"/>
+        <image name="minus" width="16" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
